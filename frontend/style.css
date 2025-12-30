@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  /* Don't set max-width globally; use max-width on images or containers as needed */
+  
 }
 
 /* Design tokens */
@@ -15,10 +15,6 @@
   --img-height: 220px;
   --transition-fast: 200ms ease;
 }
-
-/* Put the background on the root html element to ensure it covers the full page
-   and all scrolling content. Body keeps transparent so sections show the background. */
-/* Put this block in frontend/style.css; this makes the image cover the full viewport */
 html,
 body {
   height: 100%;
@@ -26,15 +22,14 @@ body {
 }
 
 body {
-  /* Keep body transparent and use a pseudo-element to show the background image */
+  
   background: transparent;
   background-color: transparent;
-  position: relative; /* create a stacking context so the pseudo-element z-index works reliably */
+  position: relative; 
   z-index: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
 }
-/* Add a fixed pseudo-element behind the content to show the background image. */
 body::before {
   content: "";
   position: fixed;
