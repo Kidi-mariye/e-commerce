@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - MyShop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar">
+      <h2 class="logo">MyShop</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="all-products">
+      <h2>All Products</h2>
+      <div id="products-container" class="product-grid">
+        <!-- JS will load all products here -->
+      </div>
+    </section>
+    <section class="all-products">
+    <h2>All Products</h2>
+
+    <!-- Search & Filter -->
+    <div class="filter-container">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <select id="category-filter">
+            <option value="all">All Categories</option></select>
+            
+    </div>
+
+    <!-- Products Grid -->
+    <div id="products-container" class="product-grid">
+        <!-- JS will load products here -->
+    </div>
+</section>
+
+
+    <!-- Script: correct path (app.js is in the frontend root) -->
+    <script src="app.js"></script>
+  </body>
+</html>

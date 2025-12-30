@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MyShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">MyShop</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <h2>Checkout</h2>
+
+        <div class="checkout-container">
+
+            <!-- Shipping Form -->
+            <form id="checkout-form" class="checkout-form">
+                <h3>Shipping Details</h3>
+
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+
+                <h3>Payment Method</h3>
+                <label class="label">
+                    <input type="radio" name="payment" checked>
+                    Cash on Delivery
+                </label>
+
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+
+            <!-- Order Summary -->
+            <div cl
