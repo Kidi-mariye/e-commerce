@@ -3,36 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MyShop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login - EthioMarket</title>
+    <link rel="stylesheet" href="/frontend/style.css">
 </head>
 <body>
 
 <nav class="navbar">
-    <h2 class="logo">MyShop</h2>
+    <h2 class="logo">EthioMarket</h2>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="/frontend/index.html">Home</a></li>
+        <li><a href="/frontend/products.html">Products</a></li>
+        <li><a href="/frontend/login.html">Login</a></li>
     </ul>
 </nav>
 
 <section class="auth">
-    <h2>Login</h2>
+    <div class="auth-shell">
+        <aside class="auth-panel">
+            <p class="eyebrow" data-i18n="authLoginEyebrow">Welcome Back</p>
+            <h2 data-i18n="authLoginTitle">Sign in to continue with your account workspace.</h2>
+            <p data-i18n="authLoginBody">Access active carts, review orders, and proceed through checkout efficiently.</p>
+            <ul class="hero-panel-list">
+                <li data-i18n="authLoginPoint1">Secure sign-in workflow</li>
+                <li data-i18n="authLoginPoint2">Persistent cart continuity</li>
+                <li data-i18n="authLoginPoint3">Direct checkout access</li>
+            </ul>
+        </aside>
 
-    <form id="login-form" class="auth-form">
-        <input type="email" id="login-email" placeholder="Email" required>
-        <input type="password" id="login-password" placeholder="Password" required>
+        <form id="login-form" class="auth-form">
+            <h3 data-i18n="authLoginFormTitle">Login</h3>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
 
-        <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" data-i18n="authLoginButton">Login</button>
 
-        <p class="auth-link">
-            Don’t have an account?
-            <a href="register.html">Register</a>
-        </p>
-    </form>
+            <p class="auth-link">
+                <span data-i18n="authLoginLinkText">Don’t have an account?</span>
+                <a href="/frontend/register.html" data-i18n="authLoginLinkCta">Register</a>
+            </p>
+        </form>
+    </div>
 </section>
 
-<script src="js/app.js"></script>
+<script src="/frontend/app.js"></script>
 </body>
 </html>

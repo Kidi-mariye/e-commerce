@@ -3,38 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My E-Commerce</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>EthioMarket Commerce</title>
+    <link rel="stylesheet" href="/frontend/style.css" />
   </head>
 
   <body>
     <!-- Navigation -->
     <nav class="navbar">
-      <h2 class="logo">MyShop</h2>
+      <h2 class="logo">EthioMarket</h2>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="/frontend/index.html">Home</a></li>
+        <li><a href="/frontend/products.html">Products</a></li>
+        <li><a href="/frontend/cart.html">Cart <span class="nav-cart-badge" data-cart-count>0</span></a></li>
+        <li><a href="/frontend/login.html">Login</a></li>
       </ul>
     </nav>
 
+    <section class="country-strip">
+      <p data-i18n="topline">Professional ecommerce experience with clear pricing, trusted inventory, and reliable fulfillment.</p>
+      <a href="/frontend/products.html" class="text-link" data-i18n="toplineCta">Explore catalog</a>
+    </section>
+
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Welcome to MyShop</h1>
-      <p>Best products at the best prices</p>
-      <a href="products.html" class="btn">Shop Now</a>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Organization-ready digital storefront</p>
+        <h1 data-i18n="heroTitle">International ecommerce standards with a clean, conversion-ready experience.</h1>
+        <p class="local-copy" data-i18n="heroSubAm">የባለሙያ ደረጃ ያለው የመስመር ላይ የሽያጭ ተሞክሮ፣ በግልጽ አወቃቀር የተዘጋጀ።</p>
+        <p>
+          <span data-i18n="heroBody">EthioMarket delivers clear product information, reliable availability signals, and a seamless purchase flow from discovery to checkout.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="/frontend/products.html" class="btn" data-i18n="heroPrimary">Browse Collection</a>
+          <a href="/frontend/cart.html" class="btn btn-secondary" data-i18n="heroSecondary">Open Cart</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <strong data-i18n="metric1Value">Fast</strong>
+            <span data-i18n="metric1Label">decision-ready product data</span>
+          </div>
+          <div>
+            <strong data-i18n="metric2Value">Clear</strong>
+            <span data-i18n="metric2Label">pricing and stock visibility</span>
+          </div>
+          <div>
+            <strong data-i18n="metric3Value">Smooth</strong>
+            <span data-i18n="metric3Label">checkout and fulfillment flow</span>
+          </div>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <p class="hero-panel-label" data-i18n="panelLabel">Platform Highlights</p>
+        <h2 data-i18n="panelTitle">Designed to support confident purchasing decisions.</h2>
+        <p>
+          <span data-i18n="panelBody">The interface emphasizes clarity, responsiveness, and practical shopping actions that reduce friction for both new and returning users.</span>
+        </p>
+        <ul class="hero-panel-list">
+          <li data-i18n="panelItem1">Dedicated product pages for every item</li>
+          <li data-i18n="panelItem2">Sticky mini-cart with live updates</li>
+          <li data-i18n="panelItem3">Inline checkout validation feedback</li>
+        </ul>
+        <a href="/frontend/product-1.html" class="text-link" data-i18n="panelCta">Open featured product</a>
+      </aside>
+      <div class="hero-visual">
+        <img src="/images/ecommerce.jpg" alt="EthioMarket showcase" class="hero-main-image" />
+        <div class="hero-visual-grid">
+          <img src="/images/headphones.png" alt="Headphones" />
+          <img src="/images/watches.png" alt="Watches" />
+          <img src="/images/backpack.png" alt="Backpack" />
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-band trust-grid">
+      <article>
+        <p class="eyebrow" data-i18n="card1Title">User Confidence</p>
+        <h3 data-i18n="card1Body">Proportional typography and clear hierarchy to improve information scanning.</h3>
+      </article>
+      <article>
+        <p class="eyebrow" data-i18n="card2Title">Product Clarity</p>
+        <h3 data-i18n="card2Body">Dedicated detail pages with consistent stock and rating context.</h3>
+      </article>
+      <article>
+        <p class="eyebrow" data-i18n="card3Title">Responsive Structure</p>
+        <h3 data-i18n="card3Body">Layout behavior remains stable across mobile, tablet, and desktop devices.</h3>
+      </article>
+      <article>
+        <p class="eyebrow" data-i18n="card4Title">Conversion Readiness</p>
+        <h3 data-i18n="card4Body">Unified actions and validation feedback reduce checkout abandonment risk.</h3>
+      </article>
     </section>
 
     <!-- Featured Products Section -->
     <section class="featured">
-      <h2>Featured Products</h2>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="featuredEyebrow">Featured Products</p>
+          <h2 data-i18n="featuredTitle">High-interest items with strong purchase intent.</h2>
+        </div>
+        <a href="/frontend/products.html" class="text-link" data-i18n="featuredCta">See all products</a>
+      </div>
       <div id="featured-products" class="product-grid">
         <!-- JS will load products here -->
       </div>
     </section>
 
+    <section class="country-service-map">
+      <div>
+        <p class="eyebrow" data-i18n="serviceTitle">Service Promise</p>
+        <h3 data-i18n="serviceBody">Transparent communication, predictable delivery, and responsive support across every stage.</h3>
+      </div>
+      <ul>
+        <li data-i18n="serviceItem1">Real-time stock indicators on product pages</li>
+        <li data-i18n="serviceItem2">Order updates from placement to fulfillment</li>
+        <li data-i18n="serviceItem3">Clear support access through email and phone</li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <h4>EthioMarket</h4>
+        <p data-i18n="footerTagline">Professional ecommerce experience with global UI standards.</p>
+      </div>
+      <div>
+        <p>Email: support@ethiomarket.et</p>
+        <p>Phone: +251 11 000 0000</p>
+      </div>
+    </footer>
+
     <!-- Script: correct path (app.js is in the frontend root) -->
-    <script src="app.js"></script>
+    <script src="/frontend/app.js"></script>
   </body>
 </html>

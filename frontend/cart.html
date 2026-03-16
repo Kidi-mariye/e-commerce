@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart - MyShop</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Cart - EthioMarket</title>
+    <link rel="stylesheet" href="/frontend/style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <h2 class="logo">MyShop</h2>
+      <h2 class="logo">EthioMarket</h2>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
+        <li><a href="/frontend/index.html">Home</a></li>
+        <li><a href="/frontend/products.html">Products</a></li>
+        <li><a href="/frontend/cart.html">Cart <span class="nav-cart-badge" data-cart-count>0</span></a></li>
       </ul>
     </nav>
 
@@ -27,11 +32,11 @@
 
       <div class="cart-summary">
         <h3>Total: <span id="cart-total">0</span></h3>
-        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        <a href="/frontend/checkout.html" class="btn">Proceed to Checkout</a>
       </div>
     </section>
 
     <!-- Script: correct path (app.js is in the frontend root) -->
-    <script src="app.js"></script>
+    <script src="/frontend/app.js"></script>
   </body>
 </html>

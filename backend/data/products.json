@@ -3,14 +3,50 @@
     "id": 1,
     "name": "Wireless Headphones",
     "price": 49.99,
-    "image": "images/headphones.jpg",
-    "description": "High quality wireless headphones"
+    "image": "../images/headphones.png",
+    "description": "High quality wireless headphones",
+    "category": "electronics",
+    "rating": 4.8,
+    "stock": 12
   },
   {
     "id": 2,
-    "name": "Smart Watch",
-    "price": 79.99,
-    "image": "images/smartwatch.jpg",
-    "description": "Track fitness and notifications"
+    "name": "Digital Watch",
+    "price": 29.99,
+    "image": "../images/watches.png",
+    "description": "Everyday digital watch",
+    "category": "accessories",
+    "rating": 4.6,
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "name": "Stylish Backpack",
+    "price": 39.99,
+    "image": "../images/backpack.png",
+    "description": "Durable backpack for daily use",
+    "category": "fashion",
+    "rating": 4.7,
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "name": "Smartphone",
+    "price": 199.99,
+    "image": "../images/power bank.png",
+    "description": "Popular smartphone model",
+    "category": "electronics",
+    "rating": 4.9,
+    "stock": 3
+  },
+  {
+    "id": 5,
+    "name": "Sneakers",
+    "price": 59.99,
+    "image": "../images/headphones.png",
+    "description": "Comfortable casual sneakers",
+    "category": "fashion",
+    "rating": 4.5,
+    "stock": 14
   }
 ]

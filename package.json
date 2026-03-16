@@ -1,0 +1,13 @@
+{
+  "name": "myshop-e-commerce",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:backend": "node backend/server.js",
+    "start:5000": "set PORT=5000&& node backend/server.js"
+  }
+}
