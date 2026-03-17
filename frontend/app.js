@@ -887,7 +887,7 @@ function bindCheckoutForm() {
 }
 
 function updateFromApi() {
-  fetch("http://localhost:5001/api/products")
+  fetch("/api/products")
     .then((res) => {
       if (!res.ok) throw new Error("Failed to fetch products from API");
       return res.json();
