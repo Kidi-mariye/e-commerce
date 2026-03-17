@@ -2,7 +2,7 @@ let products = [
   {
     id: 1,
     name: "Wireless Headphones",
-    price: 49.99,
+    price: 12499,
     image: "../images/headphones.png",
     category: "electronics",
     rating: 4.8,
@@ -12,7 +12,7 @@ let products = [
   {
     id: 2,
     name: "Digital Watch",
-    price: 29.99,
+    price: 10999,
     image: "../images/watches.png",
     category: "accessories",
     rating: 4.6,
@@ -22,7 +22,7 @@ let products = [
   {
     id: 3,
     name: "Stylish Backpack",
-    price: 39.99,
+    price: 11899,
     image: "../images/backpack.png",
     category: "fashion",
     rating: 4.7,
@@ -32,7 +32,7 @@ let products = [
   {
     id: 4,
     name: "Smartphone",
-    price: 199.99,
+    price: 45999,
     image: "../images/power bank.png",
     category: "electronics",
     rating: 4.9,
@@ -42,7 +42,7 @@ let products = [
   {
     id: 5,
     name: "Sneakers",
-    price: 59.99,
+    price: 13999,
     image: "../images/headphones.png",
     category: "fashion",
     rating: 4.5,
