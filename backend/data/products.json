@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Wireless Headphones",
-    "price": 49.99,
+    "price": 12499,
     "image": "../images/headphones.png",
     "description": "High quality wireless headphones",
     "category": "electronics",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Digital Watch",
-    "price": 29.99,
+    "price": 10999,
     "image": "../images/watches.png",
     "description": "Everyday digital watch",
     "category": "accessories",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "name": "Stylish Backpack",
-    "price": 39.99,
+    "price": 11899,
     "image": "../images/backpack.png",
     "description": "Durable backpack for daily use",
     "category": "fashion",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Smartphone",
-    "price": 199.99,
+    "price": 45999,
     "image": "../images/power bank.png",
     "description": "Popular smartphone model",
     "category": "electronics",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "name": "Sneakers",
-    "price": 59.99,
+    "price": 13999,
     "image": "../images/headphones.png",
     "description": "Comfortable casual sneakers",
     "category": "fashion",
